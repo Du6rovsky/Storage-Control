@@ -1,5 +1,5 @@
 # Storage-Control
-Storage Control Web App (Java, Groovy/Grails, GSP, HTML/CSS)
+Storage Control Web App (Groovy/Grails, GSP, HTML/CSS)
 
 Веб-приложение системы управления складом.
 Имеет следующие функции:
