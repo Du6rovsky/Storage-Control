@@ -19,14 +19,8 @@ class ProductController {
     def excelImportService
     def qtext
     def springSecurityService
-    /*def index(Integer max) {
-        params.max = Math.min(max ?: 10, 100)
-        respond Product.list(params), model:[productInstanceCount: Product.count()]
-    }*/
 
     def index(Integer max) {
-        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        String uname = auth.getName();
         //Simple search by name and brand without any plugin use
         params.max = Math.min(params.max ? params.int('max') : 20, 100)
         qtext = params.query
